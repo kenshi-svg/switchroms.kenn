@@ -1,74 +1,44 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background: #f5f5f5;
   margin: 0;
   padding: 0;
 }
-
 header {
   background: #222;
   color: white;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
 }
-
-header h1 {
-  margin: 0;
-}
-
-#search {
-  margin-top: 10px;
-  padding: 10px;
-  width: 60%;
-  border: none;
-  border-radius: 5px;
-}
-
 main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+  gap: 20px; /* расстояние между ячейками */
+  max-width: 600px;
+  margin: 20px auto;
 }
-
 .game {
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  margin: 15px;
-  padding: 15px;
-  width: 220px;
-  text-align: center;
-}
-
-.game img {
-  max-width: 100%;
   border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
 }
-
-.game h2 {
-  font-size: 18px;
-  margin: 10px 0;
+.game img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
 }
-
 .btn {
   display: inline-block;
-  padding: 10px 15px;
   margin-top: 10px;
+  padding: 8px 12px;
   background: #007BFF;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 4px;
 }
-
 .btn:hover {
   background: #0056b3;
-}
-
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
 }
