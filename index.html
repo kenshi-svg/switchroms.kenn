@@ -14,7 +14,56 @@
 
   <main id="game-list">
     <div class="game">
-      <img src="https://eggnsemulator.com/download-hollow-knight-silksong-nsp-xci-rom-uid1/" alt="Game 1">
+      <img src="<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог игр</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Каталог игр</h1>
+    <input type="text" id="search" placeholder="Поиск игр..." onkeyup="searchGame()">
+  </header>
+
+  <main id="game-list">
+    <div class="game">
+      <img src="C:\images\HKS" alt="Game 1">
+      <h2>XCI,NSP</h2>
+      <p>Download Hollow Knight: Silksong XCI ROM</p>
+      <a href="https://1fichier.com/?mbv818atvageg7k2fusk&af=2850246" target="_blank" class="btn">Скачать</a>
+    </div>
+
+    <div class="game">
+      <img src="https://via.placeholder.com/200x250" alt="Game 2">
+      <h2>Game 2</h2>
+      <p>Описание игры №2. PSP.</p>
+      <a href="https://drive.google.com/yourlink" target="_blank" class="btn">Скачать</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Мой ROM-сайт</p>
+  </footer>
+
+  <script>
+    function searchGame() {
+      let input = document.getElementById('search').value.toLowerCase();
+      let games = document.getElementsByClassName('game');
+      for (let i = 0; i < games.length; i++) {
+        let title = games[i].getElementsByTagName('h2')[0].innerText.toLowerCase();
+        if (title.includes(input)) {
+          games[i].style.display = "";
+        } else {
+          games[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+</body>
+</html" alt="Game 1">
       <h2>XCI,NSP</h2>
       <p>Download Hollow Knight: Silksong XCI ROM</p>
       <a href="https://1fichier.com/?mbv818atvageg7k2fusk&af=2850246" target="_blank" class="btn">Скачать</a>
