@@ -2,98 +2,38 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог игр</title>
+  <title>Пример 2x2</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Каталог игр</h1>
-    <input type="text" id="search" placeholder="Поиск игр..." onkeyup="searchGame()">
+    <h1>Пример 4 игры (2x2)</h1>
   </header>
 
   <main id="game-list">
     <div class="game">
-      <img src="<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог игр</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Каталог игр</h1>
-    <input type="text" id="search" placeholder="Поиск игр..." onkeyup="searchGame()">
-  </header>
-
-  <main id="game-list">
-    <div class="game">
-      <img src="C:\images\HKS" alt="Game 1">
-      <h2>XCI,NSP</h2>
-      <p>Download Hollow Knight: Silksong XCI ROM</p>
-      <a href="https://1fichier.com/?mbv818atvageg7k2fusk&af=2850246" target="_blank" class="btn">Скачать</a>
+      <img src="images/game1.jpg" alt="Game 1">
+      <h2>Game 1</h2>
+      <a href="games/game1.html" class="btn">Подробнее</a>
     </div>
 
     <div class="game">
-      <img src="https://via.placeholder.com/200x250" alt="Game 2">
+      <img src="images/game2.jpg" alt="Game 2">
       <h2>Game 2</h2>
-      <p>Описание игры №2. PSP.</p>
-      <a href="https://drive.google.com/yourlink" target="_blank" class="btn">Скачать</a>
+      <a href="games/game2.html" class="btn">Подробнее</a>
+    </div>
+
+    <div class="game">
+      <img src="images/game3.jpg" alt="Game 3">
+      <h2>Game 3</h2>
+      <a href="games/game3.html" class="btn">Подробнее</a>
+    </div>
+
+    <div class="game">
+      <img src="images/game4.jpg" alt="Game 4">
+      <h2>Game 4</h2>
+      <a href="games/game4.html" class="btn">Подробнее</a>
     </div>
   </main>
-
-  <footer>
-    <p>© 2025 Мой ROM-сайт</p>
-  </footer>
-
-  <script>
-    function searchGame() {
-      let input = document.getElementById('search').value.toLowerCase();
-      let games = document.getElementsByClassName('game');
-      for (let i = 0; i < games.length; i++) {
-        let title = games[i].getElementsByTagName('h2')[0].innerText.toLowerCase();
-        if (title.includes(input)) {
-          games[i].style.display = "";
-        } else {
-          games[i].style.display = "none";
-        }
-      }
-    }
-  </script>
-</body>
-</html" alt="Game 1">
-      <h2>XCI,NSP</h2>
-      <p>Download Hollow Knight: Silksong XCI ROM</p>
-      <a href="https://1fichier.com/?mbv818atvageg7k2fusk&af=2850246" target="_blank" class="btn">Скачать</a>
-    </div>
-
-    <div class="game">
-      <img src="https://via.placeholder.com/200x250" alt="Game 2">
-      <h2>Game 2</h2>
-      <p>Описание игры №2. PSP.</p>
-      <a href="https://drive.google.com/yourlink" target="_blank" class="btn">Скачать</a>
-    </div>
-  </main>
-
-  <footer>
-    <p>© 2025 Мой ROM-сайт</p>
-  </footer>
-
-  <script>
-    function searchGame() {
-      let input = document.getElementById('search').value.toLowerCase();
-      let games = document.getElementsByClassName('game');
-      for (let i = 0; i < games.length; i++) {
-        let title = games[i].getElementsByTagName('h2')[0].innerText.toLowerCase();
-        if (title.includes(input)) {
-          games[i].style.display = "";
-        } else {
-          games[i].style.display = "none";
-        }
-      }
-    }
-  </script>
 </body>
 </html>
